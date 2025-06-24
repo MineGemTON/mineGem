@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { TonConnectUIProvider } from '@tonconnect/ui-react';
+import Home from './pages/Home';
+import Profile from './pages/Profile';
+import Frens from './pages/Frens';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TonConnectUIProvider manifestUrl="/tonconnect-manifest.json">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/frens" element={<Frens />} />
+        </Routes>
+      </BrowserRouter>
+    </TonConnectUIProvider>
   );
 }
 
