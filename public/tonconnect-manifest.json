@@ -1,7 +1,7 @@
 {
     "name": "MineGem",
-    "url": "http://localhost:3000",
-    "iconUrl": "http://localhost:3000/logo.jpg",
-    "termsOfUseUrl": "http://localhost:3000/terms",
-    "privacyPolicyUrl": "http://localhost:3000/privacy"
+    "url": "https://mine-gem.vercel.app/",
+    "iconUrl": "https://mine-gem.vercel.app/logo.jpg",
+    "termsOfUseUrl": "https://mine-gem.vercel.app/terms",
+    "privacyPolicyUrl": "https://mine-gem.vercel.app/privacy"
   }
