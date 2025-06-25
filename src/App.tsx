@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <TonConnectUIProvider manifestUrl="/tonconnect-manifest.json">
+    <TonConnectUIProvider manifestUrl="https://mine-gem.vercel.app/tonconnect-manifest.json">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
